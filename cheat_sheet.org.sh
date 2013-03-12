@@ -115,6 +115,10 @@ apt-cache show package_name
 # Download and install a package:
 sudo apt-get install package_name
 
+# View a list of current installed software
+dpkg -l 
+dpkg --get-selections
+
 # View the output of a command in a more convenient format:
 command | less
 
@@ -259,6 +263,9 @@ phrase*
 
 # Configure network interfaces:
 ifconfig
+
+# Show a list of all network interfaces
+ifconfig -a
 
 # Configure wireless network interfaces:
 iwconfig
@@ -418,11 +425,11 @@ uname -a
 # Print information about kernel modules:
 lsmod
 
+# Uninstall a module:
+rmmod
+
 # Configure kernel modules (never do this ;p ):
 modprobe
-
-# View Installed packages:
-dpkg --get-selections
 
 # Print environment variables:
 printenv 
